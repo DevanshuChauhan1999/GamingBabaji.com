@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact US</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+    <style type="text/css">
+    	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+body{
+	
+	font-family: 'Open Sans', sans-serif;
+	background: url(nfs.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-size: 16px;
+}
+.wrapper2{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.contact-form{
+	width: 150%;
+	max-width: 500px;
+	height: auto;
+	background: rgba(0,0,0,0.7);
+	padding: 40px 60px;
+	border-radius: 5px;
+}
+.title{
+	font-size: 2em;
+	line-height: 1.25em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: #ffc107;
+	padding-bottom: 15px;
+}
+.input-fields {
+    padding: 0 30px;
+}
+.input-fields .items{
+	width: 100%;
+	padding-bottom: 15px;
+} 
+.input-fields .items .label{
+	display: block;
+    font-size: 1em;
+    color: #ffecb3;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    padding-bottom: 5px;
+}
+.input-fields .items .input,
+.input-fields .items .text-area{
+	background: transparent;
+    border: 0;
+    border: 1px solid #ffecb3;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1em;
+    color: #ffecb3;
+    border-radius: 3px;
+}
+.btn{
+	margin: 0 30px;
+	background: #ffc107;
+	color: #ffecb3;
+	font-size: 1.25em;	
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.items #msg{
+	height: 100px;
+}
+
+
+/* jquery code */
+.input-fields .items .input.active .label{
+	font-size: 15px;
+	top: 0;
+}
+
+@media screen and (max-width: 750px){
+	.input-fields {
+	    padding: 0;
+	}
+}
+    </style>
+</head>
+<body bgcolor="DarkGrey">
+<div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              Gaming Babaji
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+									<li><a href="home.html">Home</a></li>
+                                    <li><a href="games.html">Games</a></li>   
+				            		<li><a href="about.html">About</a></li>    
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><i class="fa fa-unlock-alt" aria-hidden="true" style="color: red;"></i><a href="login.html"><span style = "color:#FF0000;  ">Login</span>
+                                    <i class="fa fa-user" aria-hidden="true" style="color: red;"></i><span style = "color:#FF0000; ">Sign Up</span></a>
+                                	</li> 
+								</ul>
+						</div>
+                </nav>
+    			<div class="section">	
+				<h1 align="Center" style="font-family: Monotype Corsiva;">Contact Us</h1>
+				</div>
+  			</header>
+</div>
+<div class="wrapper2">
+		<div class="contact-form">
+			<div class="title">Contact US</div>
+			<div class="input-fields">
+					<div class="items">
+						<label for="name" class="label">name</label>
+						<input id="name" type="text" class="input">
+					</div>
+					<div class="items">
+						<label for="email" class="label">email</label>
+						<input id="email" type="text" class="input">
+					</div>
+					<div class="items">
+						<label for="subject" class="label">subject</label>
+						<input id="subject" type="text" class="input">
+					</div>
+					<div class="items">
+						<label for="msg" class="label">message</label>
+						<textarea id="msg" class="text-area"></textarea>
+					</div>
+			</div>	
+			<div class="btn">send</div>
+			</div>
+</div>	
+	<script>
+
+		$(document).ready(function(){
+			$(".btn").click(function(){
+				$(".input, .text-area").val(" ");
+			});
+		});
+	</script>
+	<script type="text/javascript">
+      // Menu-toggle button
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+      // Scrolling Effect
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      </script>
+</body>
+</html>

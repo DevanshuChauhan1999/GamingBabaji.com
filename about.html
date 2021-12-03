@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Home</title>
+      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<title>About</title>
+	<style type="text/css">
+	h1 {
+  text-align: center;
+  font-size: 10rem;
+  color: White ;
+  font-family: "Cookie";
+  padding: 30px;
+  margin: 0px;
+  z-index: 1;
+  opacity: 1;
+  }
+	body{
+  margin:0;
+  color:#FDFEFE  ;
+  background:url(bg.jpg) no-repeat ;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+	img {
+  border-radius: 50%;
+}
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              Gaming Babaji
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+						<li><a href="home.html">Home</a></li>
+                                    <li><a href="games.html">Games</a></li>   
+				            <li><a href="about.html">About</a></li>    
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><i class="fa fa-unlock-alt" aria-hidden="true" style="color: red;"></i><a href="login.html"><span style = "color:#FF0000;  ">Login</span>
+                                    <i class="fa fa-user" aria-hidden="true" style="color: red;"></i><span style = "color:#FF0000; ">Sign Up</span></a></li> 
+					</ul>
+				</div>
+                </nav>
+               
+	<div class="section">
+		
+	
+	<h1 align="Center" style="font-family: Monotype Corsiva;">About Us</h1>
+	</div>
+
+
+	<DIV class="About">
+		<table border="0" align="center">
+			<tr>
+				<th>
+					<img src="p1.jpg" alt="image" height=442 width=442> 
+				</th>
+				
+				
+				<tr>
+				<th>
+					<h2>Devanshu Chauhan</h2>
+				</th>
+				
+				
+				<tr>
+				<th>
+					<h2>MCA 2020-2022</h2>
+				</th>
+				
+				
+				<tr>
+				<th>
+					<h2>ITM University, Gwalior</h2>
+				</th>
+				
+				
+			</tr>
+
+			</tr>
+		</table>
+		
+	</DIV>
+	</div>
+            </header>
+<script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>
